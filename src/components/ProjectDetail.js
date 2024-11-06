@@ -8,7 +8,7 @@ const projectData = [
     id: 1,
     title: 'Project One',
     description: 'A detailed description of Project One.',
-    image: require('../media/me.jpeg'),
+    image: require('../media/flyer-wordpress.png'),
     link: 'https://yourprojectlink1.com',
     details: 'Here you can add more information about this project, including technologies used, challenges faced, and links to GitHub or live demos.',
   },
@@ -37,9 +37,9 @@ const ProjectDetail = () => {
       <h2>{project.title}</h2>
       <p>{project.description}</p>
       <p>{project.details}</p>
-      <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn">
+      {/* <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn">
         Visit Project
-      </a>
+      </a> */}
     </div>
   );
 };

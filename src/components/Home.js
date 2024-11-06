@@ -10,7 +10,7 @@ const Home = () => {
           id: 1,
           title: 'Project One',
           description: 'A brief description of Project One.',
-          image: require('../media/me.jpeg'), // Adjust path and use require for local images
+          image: require('../media/flyer-wordpress.png'), // Adjust path and use require for local images
           link: 'https://yourprojectlink1.com',
         },
         {

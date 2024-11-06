@@ -1,5 +1,5 @@
 .project-detail {
-    max-width: 800px;
+
     margin: 0 auto;
     text-align: center;
     padding: 20px;
@@ -8,13 +8,13 @@
   .project-detail-image {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+
     margin-bottom: 20px;
   }
 
   .btn {
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;

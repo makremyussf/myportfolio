@@ -1,18 +1,36 @@
-// src/Navbar.js
-import React from 'react';
-import './Navbar.css'; // We'll style the navbar later
+// src/components/Navbar.js
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <nav className="navbar">
       <div className="logo">
-        <h1>MakyCreativeSpace</h1>
+        <h1>My Portfolio</h1>
       </div>
-      <ul className="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <div className="menu-icon" onClick={toggleMenu}>
+        ☰
+      </div>
+      <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
+        <li>
+          <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+        </li>
+        <li>
+          <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
+        </li>
+        <li>
+          <Link to="#projects" onClick={() => setMenuOpen(false)}>Projects</Link>
+        </li>
+        <li>
+          <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+        </li>
       </ul>
     </nav>
   );
