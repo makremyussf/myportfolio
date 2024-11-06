@@ -64,13 +64,11 @@
     margin-bottom: 20px;
     color: #000000;
   }
-
   .projects {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
   }
-
   .project-card {
     background-color: #fff;
     border-radius: 10px;
