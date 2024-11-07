@@ -3,8 +3,8 @@
 const ProjectData = [
     {
         id: 1,
-        title: 'Project One',
-        description: 'A brief description of Project One.',
+        title: 'Flyer',
+        description: 'A Flyer i made for a client.',
         image: require('../media/flyer-wordpress.png'), // Adjust path
         link: 'https://yourprojectlink1.com',
     },

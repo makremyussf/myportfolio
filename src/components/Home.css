@@ -38,7 +38,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #ffe7fd;
+    background-color: #fbe4ca;
+
   }
   .divider {
     width: 80%; /* Adjust width as needed */
@@ -57,13 +58,13 @@
     z-index: 1; /* Ensures the image stays above other content */
   }
   .home-content {
-
+    justify-items: center;
   }
 
   .home-content h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    color: #010144;
+    color: #440101;
     font-size: 3.5em;
   }
 
@@ -86,7 +87,7 @@
     font-weight: bolder;
   }
 .viewmywork{
-
+  text-align: center;
   justify-items: center;
       padding: 15px 25px;
       width: 200px;
@@ -94,9 +95,9 @@
       font-size: 1.5em;
       justify-items: center;
       cursor: pointer;
-
+      font-family: 'Roboto';
       justify-self: center;
-
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #000000;
     color: #fff;
     text-decoration: none;
@@ -116,7 +117,10 @@
     background-color: #555;
   }
   .aboutme{
+    width: 80%;
     font-size: 1.5em;
+    justify-self: center;
+text-align: center;
   }
 
   .home-image {
@@ -190,4 +194,27 @@
 
   .project-card .btn:hover {
     background-color: #555;
+  }
+
+
+
+  @media (max-width: 1024px) {
+
+  }
+
+  @media (max-width: 768px) {
+    .home-content h1 {
+
+      font-size: 2.5em;
+    }
+    .makremyoussef{
+
+      font-size: 2em;
+    }
+    .aboutme{
+
+      font-size: 1.2em;
+      justify-self: center;
+  text-align: center;
+    }
   }
