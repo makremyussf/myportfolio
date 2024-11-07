@@ -2,30 +2,11 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import './ProjectDetail.css';
-
-const projectData = [
-  {
-    id: 1,
-    title: 'Project One',
-    description: 'A detailed description of Project One.',
-    image: require('../media/flyer-wordpress.png'),
-    link: 'https://yourprojectlink1.com',
-    details: 'Here you can add more information about this project, including technologies used, challenges faced, and links to GitHub or live demos.',
-  },
-  {
-    id: 2,
-    title: 'Project Two',
-    description: 'A detailed description of Project Two.',
-    image: require('../media/me.jpeg'),
-    link: 'https://yourprojectlink2.com',
-    details: 'Detailed information about Project Two goes here.',
-  },
-  // Add more projects as needed
-];
+import ProjectData from './projectData'; // Import the data
 
 const ProjectDetail = () => {
   const { projectId } = useParams();
-  const project = projectData.find((proj) => proj.id === parseInt(projectId));
+  const project = ProjectData.find((proj) => proj.id === parseInt(projectId));
 
   if (!project) {
     return <p>Project not found!</p>;

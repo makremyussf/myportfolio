@@ -10,6 +10,15 @@
   margin: 10px; /* Add some margin between cards */
   background-color: #fff; /* Optional: Add a background color */
 }
+.project-card {
+  width: 100%; /* Allows the card to take full width up to max-width */
+  max-width: 300px; /* Sets the maximum width for each card */
+  text-align: center;
+}
+.project-card {
+  flex: 1 1 300px; /* Allows cards to adjust to smaller screens */
+  max-width: 300px;
+}
 
 .project-image {
   width: 100%;
